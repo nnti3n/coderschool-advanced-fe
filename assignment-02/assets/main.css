@@ -1,0 +1,59 @@
+body {
+    font-family: 'Verdana', serif;
+}
+
+:root {
+    --primary-color: black;
+}
+
+.weather-app {
+    display: grid;
+    grid-template: repeat(6, 1fr) / 1fr;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+
+.weather-app div {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    grid-row: span 2;
+    min-height: 300px;
+    min-height: 300px;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+}
+
+.time {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.locate {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.status {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.temp {
+    font-weight: 600;
+    font-size: 100px;
+}
+
+@media screen and (min-width: 769px) {
+    .weather-app{
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        height: 60vh;
+    }
+}
